@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1af0396859d61b8fb67ebae0ba953f67",
+    "content-hash": "7d4ebf428671c75ccf566ec4086e7e02",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1558,6 +1558,127 @@
             "time": "2022-10-06T15:57:08+00:00"
         },
         {
+            "name": "drupal/key",
+            "version": "1.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/key.git",
+                "reference": "8.x-1.16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/key-8.x-1.16.zip",
+                "reference": "8.x-1.16",
+                "shasum": "35a4476d7d52563bb26bd4dcc5fbf5fdd7c9391b"
+            },
+            "require": {
+                "drupal/core": ">=8.9 <11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.16",
+                    "datestamp": "1661968490",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": ">=9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Cellar Door",
+                    "homepage": "https://www.drupal.org/user/658076"
+                },
+                {
+                    "name": "crashtest_",
+                    "homepage": "https://www.drupal.org/user/261457"
+                },
+                {
+                    "name": "nerdstein",
+                    "homepage": "https://www.drupal.org/user/1557710"
+                },
+                {
+                    "name": "rlhawk",
+                    "homepage": "https://www.drupal.org/user/352283"
+                }
+            ],
+            "description": "Provides the ability to manage site-wide keys",
+            "homepage": "http://drupal.org/project/key",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/key",
+                "issues": "http://drupal.org/project/key"
+            }
+        },
+        {
+            "name": "drupal/lockr",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/lockr.git",
+                "reference": "4.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lockr-4.0.1.zip",
+                "reference": "4.0.1",
+                "shasum": "6c165330ca433fbd62a5fb648ef775c3f74e1165"
+            },
+            "require": {
+                "drupal/core": "^8.5.0 || ^9",
+                "drupal/key": "*",
+                "lockr/lockr": "^1.0.10"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+                "drupal/coder": "^8.3.1",
+                "squizlabs/php_codesniffer": "^3.5.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.0.1",
+                    "datestamp": "1621618625",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tynor Fujimoto",
+                    "homepage": "https://www.drupal.org/user/658076",
+                    "email": "tynor@lockr.io"
+                },
+                {
+                    "name": "tynor",
+                    "homepage": "https://www.drupal.org/user/2477108"
+                }
+            ],
+            "description": "Plugin for the Key module to integrate with Lockr, a hosted offsite key management platform.",
+            "homepage": "https://www.drupal.org/project/lockr",
+            "support": {
+                "source": "https://git.drupalcode.org/project/lockr"
+            }
+        },
+        {
             "name": "drupal/mailchimp",
             "version": "2.0.2",
             "source": {
@@ -2297,6 +2418,62 @@
             "time": "2022-06-20T21:43:03+00:00"
         },
         {
+            "name": "indigophp/hash-compat",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/indigophp/hash-compat.git",
+                "reference": "43a19f42093a0cd2d11874dff9d891027fc42214"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/indigophp/hash-compat/zipball/43a19f42093a0cd2d11874dff9d891027fc42214",
+                "reference": "43a19f42093a0cd2d11874dff9d891027fc42214",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/hash_equals.php",
+                    "src/hash_pbkdf2.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "Backports hash_* functionality to older PHP versions",
+            "homepage": "https://indigophp.com",
+            "keywords": [
+                "hash",
+                "hash_equals",
+                "hash_pbkdf2"
+            ],
+            "support": {
+                "issues": "https://github.com/indigophp/hash-compat/issues",
+                "source": "https://github.com/indigophp/hash-compat/tree/master"
+            },
+            "abandoned": true,
+            "time": "2015-08-22T07:03:35+00:00"
+        },
+        {
             "name": "laminas/laminas-diactoros",
             "version": "2.11.3",
             "source": {
@@ -2676,6 +2853,56 @@
             "time": "2021-11-16T10:29:06+00:00"
         },
         {
+            "name": "lockr/lockr",
+            "version": "v1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lockr/lockr-php.git",
+                "reference": "8f5077580950b10bec290bd57eae352275332c72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lockr/lockr-php/zipball/8f5077580950b10bec290bd57eae352275332c72",
+                "reference": "8f5077580950b10bec290bd57eae352275332c72",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3.0",
+                "guzzlehttp/psr7": "^1.4.2",
+                "indigophp/hash-compat": "^1.1.0",
+                "paragonie/random_compat": ">=2",
+                "psr/http-message": "^1.0.1",
+                "psr/log": "^1.0.2",
+                "symfony/yaml": "~3.4.5 || ^4.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.3.5",
+                "squizlabs/php_codesniffer": "^3.3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lockr\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tynor Fujimoto",
+                    "email": "tynor@lockr.io"
+                }
+            ],
+            "description": "Client for use with Lockr off-site key management service.",
+            "support": {
+                "issues": "https://github.com/lockr/lockr-php/issues",
+                "source": "https://github.com/lockr/lockr-php/tree/v1.0.11"
+            },
+            "time": "2020-06-25T19:21:18+00:00"
+        },
+        {
             "name": "masterminds/html5",
             "version": "2.7.6",
             "source": {
@@ -2858,6 +3085,56 @@
             "transport-options": {
                 "relative": true
             }
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v9.99.100",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*",
+                "vimeo/psalm": "^1"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "polyfill",
+                "pseudorandom",
+                "random"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/random_compat/issues",
+                "source": "https://github.com/paragonie/random_compat"
+            },
+            "time": "2020-10-15T08:29:30+00:00"
         },
         {
             "name": "pear/archive_tar",
