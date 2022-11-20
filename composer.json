@@ -24,7 +24,8 @@
         "drupal/mailchimp": "^2.0",
         "drupal/key": "^1.16",
         "drupal/lockr": "^4.0",
-        "drupal/libraries": "4.0"
+        "drupal/libraries": "4.0",
+        "drupal/rules": "^3.0@alpha"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
@@ -32,7 +33,7 @@
     "conflict": {
             "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "drupal-scaffold": {
