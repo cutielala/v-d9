@@ -20,4 +20,3 @@ jobs:
         git remote add pantheon $pantheon_repo
         git add -A
         git commit -m "Deploy to Pantheon"
-        git push pantheon master
