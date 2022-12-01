@@ -17,5 +17,5 @@ jobs:
       env:
         pantheon_repo: '${{ secrets.PANTHEON_REPO }}'
       run: |
-        git remote add -m origin $pantheon_repo
+        git remote add -m pantheon $pantheon_repo
         
