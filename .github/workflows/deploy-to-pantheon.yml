@@ -17,5 +17,5 @@ jobs:
       env:
         pantheon_repo: '${{ secrets.PANTHEON_REPO }}'
       run: |
-        git remote add -m pantheon $pantheon_repo
+        git remote add -m pantheon ssh://codeserver.dev.941d2f97-5700-459a-bb11-89868d8cc1c6@codeserver.dev.941d2f97-5700-459a-bb11-89868d8cc1c6.drush.in:2222/~/repository.git v-d9
         
