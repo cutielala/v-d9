@@ -18,4 +18,4 @@ jobs:
         pantheon_repo: '${{ secrets.PANTHEON_REPO }}'
       run: |
         git remote add origin $pantheon_repo
-        git push origin HEAD:master
+        git push origin master
