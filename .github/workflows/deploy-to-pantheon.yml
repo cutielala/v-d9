@@ -18,8 +18,4 @@ jobs:\
         pantheon_repo: '${{ secrets.PANTHEON_REPO }}'
       run: |
         git remote add pantheon env.pantheon_repo
-<<<<<<< HEAD
         git push pantheon HEAD:master
-=======
-
->>>>>>> d828fd5a19c142537c78e9bc59c5f63b372c38b6
