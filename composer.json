@@ -25,7 +25,8 @@
         "drupal/key": "^1.16",
         "drupal/lockr": "^4.0",
         "drupal/libraries": "4.0",
-        "drupal/rules": "^3.0@alpha"
+        "drupal/rules": "^3.0@alpha",
+        "drupal/automatic_updates": "2.5"
     },
     "require-dev": {
         "drupal/core-dev": "^9.2"
