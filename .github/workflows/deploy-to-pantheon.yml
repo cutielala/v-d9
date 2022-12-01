@@ -15,7 +15,7 @@ jobs:
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
     - name: deployer
       env:
-        pantheon_repo: '${{ secrets.PANTHEON_REPO }}'
+        pantheon_repo: ${{ secrets.PANTHEON_REPO }}
       run: |
         git remote add pantheon env.pantheon_repo
         git push pantheon HEAD:master
